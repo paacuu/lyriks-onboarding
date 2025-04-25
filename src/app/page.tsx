@@ -185,7 +185,7 @@ export default function OnboardingApp() {
 {step === 0 && (
   <motion.img
   src="/logo.png" // <-- ici
-  alt="Logo Lyriks"
+  alt="logo Lyriks"
   initial={{ opacity: 0, scale: 0.8 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.6 }}
