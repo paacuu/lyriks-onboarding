@@ -58,10 +58,10 @@ export default function OnboardingApp() {
   const [pitchText, setPitchText] = useState("");
   const [sector, setSector] = useState("");
 
-  const isQuizStep = step === 6;
-  const isPitchStep = step === 7;
-  const isPromptStep = step === 8;
-  const isFinalStep = step === 9;
+  const isQuizStep = step === 7;
+  const isPitchStep = step === 8;
+  const isPromptStep = step === 9;
+  const isFinalStep = step === 10;
   const isFunnelVisualStep = step === 2;
 
   const handleQuizSelect = (qIdx: number, aIdx: number) => {
@@ -150,10 +150,10 @@ export default function OnboardingApp() {
   "Le Framework Lyriks : Orchestrer la clarté, closer avec impact 🎼",
   "Facette (F7) : Ta Force IA 💡",
   "Ce qu'on attend de toi 🧠",
-  "C’est parti ! 🎬",
   "🎓 Quiz de validation",
   "🧪 Cas d’usage à pitcher",
   "🎯 Générateur d'accroche Lyriks",
+  "C’est parti ! 🎬",
   "✅ Onboarding terminé"
 ];
   const currentDescription = [
@@ -165,11 +165,15 @@ export default function OnboardingApp() {
 "👉 Ta mission : le faire découvrir à un CEO, un PM ou un CTO, et leur montrer que comprendre, décider et aligner n’a jamais été aussi simple.",
   "Avec F7, tu montres la puissance de l'automatisation : génération de diagrammes, specs PDF, prompts IA, tout ça en live. Une arme redoutable pour closer sans friction.",
   "Être stratégique, comprendre les enjeux business, et créer du lien humain. Tu es là pour guider, convaincre et accompagner nos futurs clients vers la clarté totale.",
-  "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
   "Réponds à ces 3 questions pour valider ton onboarding :",
-  "Tu es face à un CEO de LegalTech en série A. Il a 6 prestataires, 4 outils, et aucune vision consolidée. Rédige ton approche commerciale.",
+  "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
+
+"Tu es face à un CEO de LegalTech en série A. Il a 6 prestataires, 4 outils, et aucune vision consolidée. Rédige ton approche commerciale.",
   "Tape un secteur pour générer une accroche sectorielle dans l’esprit Lyriks.",
-  "Bravo 👏 Tu as coché toutes les étapes."
+  "Bravo 👏 Tu as coché toutes les étapes.",
+  "🎉 Tu as complété l’onboarding Lyriks !",
+
+"Tu es prêt à prendre la main sur des RDV, pitcher un use case et faire vivre une démo immersive.",
 ];
 
   return (
@@ -189,7 +193,7 @@ export default function OnboardingApp() {
 {step === 0 && (
   <motion.img
     src="/Logo.png"
-    alt="Logo.png"
+    alt="Logo Lyriks"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6 }}
@@ -199,7 +203,7 @@ export default function OnboardingApp() {
             <p className="text-[#333] text-base whitespace-pre-line">
               {currentDescription[step]}
             </p>
-{step === 3 && (
+{step === 4 && (
   <img
     src="/a4e2ded2-50c4-435e-a5d5-437a3c1b1675.png"
     alt="Diagramme Facette F7"
