@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://lyriks-onboarding.vercel.app'),
   title: "Lyriks Onboarding Sales",
   description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
   openGraph: {
@@ -22,17 +21,11 @@ export const metadata = {
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
     images: [
       {
-        url: "https://lyriks-onboarding-sales.vercel.app/Logo.png", // URL ABSOLUE
+        url: "https://lyriks-onboarding-sales.vercel.app/Logo.png",
         width: 1200,
         height: 630,
         alt: "Logo Lyriks",
-      },
-    ],
-    type: "website",
-    siteName: "Lyriks",
-    locale: "fr_FR",
-  },
-  
+      }
     ],
     type: "website",
     siteName: "Lyriks",
@@ -42,9 +35,10 @@ export const metadata = {
     card: "summary",
     title: "Lyriks Onboarding Sales",
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
-    images: ['https://lyriks-onboarding.vercel.app/Logo.png'],
+    images: ["https://lyriks-onboarding-sales.vercel.app/Logo.png"],
   },
 };
+
 
 
 
