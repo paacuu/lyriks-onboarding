@@ -62,7 +62,7 @@ export default function OnboardingApp() {
   const isPitchStep = step === 8;
   const isPromptStep = step === 9;
   const isFinalStep = step === 10;
-  const isFunnelVisualStep = step === 3;
+  const isFunnelVisualStep = step === 2;
 
   const handleQuizSelect = (qIdx: number, aIdx: number) => {
   const newAnswers = [...quizAnswers];
@@ -212,4 +212,3 @@ export default function OnboardingApp() {
     </div>
   );
 }
-
