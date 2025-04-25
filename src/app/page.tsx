@@ -58,10 +58,10 @@ export default function OnboardingApp() {
   const [pitchText, setPitchText] = useState("");
   const [sector, setSector] = useState("");
 
-  const isQuizStep = step === 7;
-  const isPitchStep = step === 8;
-  const isPromptStep = step === 9;
-  const isFinalStep = step === 10;
+  const isQuizStep = step === 6;
+  const isPitchStep = step === 7;
+  const isPromptStep = step === 8;
+  const isFinalStep = step === 9;
   const isFunnelVisualStep = step === 2;
 
   const handleQuizSelect = (qIdx: number, aIdx: number) => {
@@ -184,12 +184,12 @@ export default function OnboardingApp() {
 </h2>
 {step === 0 && (
   <motion.img
-  src="/b12edd95-e353-42ea-8423-95b882fd166c.png" // <-- ici
-  alt="b12edd95-e353-42ea-8423-95b882fd166c.png"
-  initial={{ opacity: 0, scale: 0.8 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.6 }}
-  className="mx-auto mt-2 w-12 h-12"
+    src="/Logo.png"
+    alt="Logo Lyriks"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6 }}
+    className="mx-auto mt-2 w-12 h-12"
 />
 )}
             <p className="text-[#333] text-base whitespace-pre-line">
@@ -229,4 +229,5 @@ export default function OnboardingApp() {
     </div>
   );
 }
+
 
