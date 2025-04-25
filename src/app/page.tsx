@@ -67,7 +67,7 @@ export default function OnboardingApp() {
                     checked={quizAnswers[qIdx] === optIdx}
                     onChange={() => handleQuizSelect(qIdx, optIdx)}
                   />
-                  <span>{opt}</span>
+                  <span className="text-black">{opt}</span>
                 </label>
               </div>
             ))}
@@ -115,9 +115,7 @@ export default function OnboardingApp() {
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Button onClick={() => alert("Pitch copié dans le presse-papier !")}>📋 Copier mon pitch</Button>
-        <Button variant="outline" onClick={() => window.open("https://cal.com/romainlyriks/onboarding", "_blank")}>
-          📅 Prendre un RDV
-        </Button>
+        <Button variant="outline" onClick={() => window.open("https://cal.com/romainlyriks/onboarding", "_blank")}>📅 Prendre un RDV</Button>
       </div>
     </div>
   );
@@ -193,4 +191,5 @@ export default function OnboardingApp() {
     </div>
   );
 }
+
 
