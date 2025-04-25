@@ -147,6 +147,7 @@ export default function OnboardingApp() {
   "Bienvenue chez Lyriks 🚀",
   "Notre Mission 🎯",
   "Le Process Sales Lyriks 🔥",
+  "Le Framework Lyriks : Orchestrer la clarté, closer avec impact 🎼",
   "Facette (F7) : Ta Force IA 💡",
   "Ce qu'on attend de toi 🧠",
   "C’est parti ! 🎬",
@@ -159,6 +160,10 @@ export default function OnboardingApp() {
   "Tu fais désormais partie de l'équipe Sales la plus stratégique du marché SaaS B2B. Ici, on ne vend pas un outil, on change la manière dont les projets IT sont pensés et pilotés.",
   "Lyriks accélère la prise de décision, clarifie les specs et automatise l'orchestration des projets. Ta mission ? Rendre ça irrésistible pour un CEO, un PM ou un CTO.",
   "Un parcours clair et engageant, pensé pour projeter le client vers sa réussite.",
+  "Lyriks, c’est le langage visuel pour transformer n’importe quel projet en une spécification claire, actionnable et collaborative.\n\n👉 Ta mission : le faire découvrir à un CEO, un PM ou un CTO, et leur montrer que comprendre, décider et aligner n’a jamais été aussi simple.",
+
+
+👉 Ta mission : le faire découvrir à un CEO, un PM ou un CTO, et leur montrer que comprendre, décider et aligner n’a jamais été aussi simple.",
   "Avec F7, tu montres la puissance de l'automatisation : génération de diagrammes, specs PDF, prompts IA, tout ça en live. Une arme redoutable pour closer sans friction.",
   "Être stratégique, comprendre les enjeux business, et créer du lien humain. Tu es là pour guider, convaincre et accompagner nos futurs clients vers la clarté totale.",
   "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
@@ -184,8 +189,8 @@ export default function OnboardingApp() {
 </h2>
 {step === 0 && (
   <motion.img
-    src="/b12edd95-e353-42ea-8423-95b882fd166c.png"
-    alt="b12edd95-e353-42ea-8423-95b882fd166c.png"
+    src="/Logo.png"
+    alt="Logo Lyriks"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6 }}
@@ -229,5 +234,3 @@ export default function OnboardingApp() {
     </div>
   );
 }
-
-
