@@ -160,18 +160,18 @@ export default function OnboardingApp() {
   "Tu fais désormais partie de l'équipe Sales la plus stratégique du marché SaaS B2B. Ici, on ne vend pas un outil, on change la manière dont les projets IT sont pensés et pilotés.",
   "Lyriks accélère la prise de décision, clarifie les specs et automatise l'orchestration des projets. Ta mission ? Rendre ça irrésistible pour un CEO, un PM ou un CTO.",
   "Un parcours clair et engageant, pensé pour projeter le client vers sa réussite.",
-  "Lyriks, c’est le langage visuel pour transformer n’importe quel projet en une spécification claire, actionnable et collaborative.",
+  "Lyriks, c’est le langage visuel pour transformer n’importe quel projet en une spécification claire, actionnable et collaborative.
 
-"👉 Ta mission : le faire découvrir à un CEO, un PM ou un CTO, et leur montrer que comprendre, décider et aligner n’a jamais été aussi simple.",
+👉 Ta mission : le faire découvrir à un CEO, un PM ou un CTO, et leur montrer que comprendre, décider et aligner n’a jamais été aussi simple.",
   "Avec F7, tu montres la puissance de l'automatisation : génération de diagrammes, specs PDF, prompts IA, tout ça en live. Une arme redoutable pour closer sans friction.",
   "Être stratégique, comprendre les enjeux business, et créer du lien humain. Tu es là pour guider, convaincre et accompagner nos futurs clients vers la clarté totale.",
   "Réponds à ces 3 questions pour valider ton onboarding :",
   "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
   "Tu es face à un CEO de LegalTech en série A. Il a 6 prestataires, 4 outils, et aucune vision consolidée. Rédige ton approche commerciale.",
   "Tape un secteur pour générer une accroche sectorielle dans l’esprit Lyriks.",
-  "🎉 Tu as complété l’onboarding Lyriks !",
+  "🎉 Tu as complété l’onboarding Lyriks !
 
-"Tu es prêt à prendre la main sur des RDV, pitcher un use case et faire vivre une démo immersive.",
+Tu es prêt à prendre la main sur des RDV, pitcher un use case et faire vivre une démo immersive."
 ];
 
   return (
