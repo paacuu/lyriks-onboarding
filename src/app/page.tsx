@@ -125,6 +125,7 @@ export default function OnboardingApp() {
 
   const renderFinal = () => (
     <div className="space-y-4">
+      <p className="text-xl font-bold text-[#006DFE]">🎉 Tu as complété l’onboarding Lyriks !</p>
       <p className="text-sm text-gray-600">
         Tu es prêt à prendre la main sur des RDV, pitcher un use case et faire vivre une démo immersive.
       </p>
