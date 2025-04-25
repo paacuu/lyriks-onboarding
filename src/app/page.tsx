@@ -146,8 +146,7 @@ export default function OnboardingApp() {
   const currentTitle = [
   "Bienvenue chez Lyriks 🚀",
   "Notre Mission 🎯",
-  "Le Process Sales Lyriks 🔻",
-  "Le Funnel Sales Simplifié 🔥",
+  "Le Process Sales Lyriks 🔥",
   "Facette (F7) : Ta Force IA 💡",
   "Ce qu'on attend de toi 🧠",
   "C’est parti ! 🎬",
@@ -159,8 +158,7 @@ export default function OnboardingApp() {
   const currentDescription = [
   "Tu fais désormais partie de l'équipe Sales la plus stratégique du marché SaaS B2B. Ici, on ne vend pas un outil, on change la manière dont les projets IT sont pensés et pilotés.",
   "Lyriks accélère la prise de décision, clarifie les specs et automatise l'orchestration des projets. Ta mission ? Rendre ça irrésistible pour un CEO, un PM ou un CTO.",
-  "Préparation stratégique → Découverte impactante → Démo immersive avec F7 → Validation → Closing. Chaque étape est optimisée pour la projection client.",
-  "🔬 Préparation → 🤝 Découverte → 🧠 Démo F7 → ✅ Validation → 💼 Closing\nUn parcours clair et engageant, pensé pour projeter le client vers sa réussite.",
+  "Un parcours clair et engageant, pensé pour projeter le client vers sa réussite.",
   "Avec F7, tu montres la puissance de l'automatisation : génération de diagrammes, specs PDF, prompts IA, tout ça en live. Une arme redoutable pour closer sans friction.",
   "Être stratégique, comprendre les enjeux business, et créer du lien humain. Tu es là pour guider, convaincre et accompagner nos futurs clients vers la clarté totale.",
   "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
@@ -195,18 +193,23 @@ export default function OnboardingApp() {
             {isFunnelVisualStep && <FunnelAnimation />}
 
             <div className="flex justify-between mt-6">
-              {step > 0 ? (
-                <Button variant="outline" onClick={back} className="border-[#FC9600] text-[#FC9600]">
-                  Précédent
-                </Button>
-              ) : <div />}
-              <Button onClick={next} disabled={step === currentTitle.length - 1} className="bg-[#FC9600] text-white hover:bg-[#bb46f5]">
-                Suivant
-              </Button>
-            </div>
+  {step > 0 ? (
+    <Button variant="outline" onClick={back} className="border-[#FC9600] text-[#FC9600]">
+      Précédent
+    </Button>
+  ) : <div />}
+  <Button 
+    onClick={next} 
+    disabled={step === currentTitle.length - 1} 
+    className={`bg-[#FC9600] text-white hover:bg-[#bb46f5] ${step === 0 ? 'mx-auto' : ''}`}
+  >
+    Suivant
+  </Button>
+</div>
           </CardContent>
         </Card>
       </motion.div>
     </div>
   );
 }
+
