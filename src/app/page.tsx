@@ -160,7 +160,7 @@ export default function OnboardingApp() {
   "Tu fais désormais partie de l'équipe Sales la plus stratégique du marché SaaS B2B. Ici, on ne vend pas un outil, on change la manière dont les projets IT sont pensés et pilotés.",
   "Lyriks accélère la prise de décision, clarifie les specs et automatise l'orchestration des projets. Ta mission ? Rendre ça irrésistible pour un CEO, un PM ou un CTO.",
   "Un parcours clair et engageant, pensé pour projeter le client vers sa réussite.",
-  "Lyriks, c’est le langage visuel pour transformer n’importe quel projet en une spécification claire, actionnable et collaborative.\n\n
+  "Lyriks, c’est le langage visuel pour transformer n’importe quel projet en une spécification claire, actionnable et collaborative.\n\n👉 Ta mission : le faire découvrir à un CEO, un PM ou un CTO, et leur montrer que comprendre, décider et aligner n’a jamais été aussi simple.",
 
 
 
