@@ -195,6 +195,13 @@ export default function OnboardingApp() {
             <p className="text-[#333] text-base whitespace-pre-line">
               {currentDescription[step]}
             </p>
+{step === 3 && (
+  <img
+    src="/a4e2ded2-50c4-435e-a5d5-437a3c1b1675.png"
+    alt="Diagramme Facette F7"
+    className="mx-auto rounded-lg shadow-md w-full max-w-md mt-4"
+  />
+)}
 
             {isQuizStep && renderQuiz()}
             {isPitchStep && renderPitch()}
