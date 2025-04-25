@@ -99,7 +99,7 @@ export default function OnboardingApp() {
       />
       {sector && (
         <p className="text-sm italic text-gray-600">
-          👉 "Et si {sector} pouvait enfin aligner ses specs avec la vision produit ?"
+          👉 &quot;Et si {sector} pouvait enfin aligner ses specs avec la vision produit ?&quot;
         </p>
       )}
     </div>
@@ -108,14 +108,16 @@ export default function OnboardingApp() {
   const renderFinal = () => (
     <div className="space-y-4">
       <p className="text-[#333] text-base font-medium">
-        🎉 Tu as complété l'onboarding Lyriks !
+        🎉 Tu as complété l&rsquo;onboarding Lyriks !
       </p>
       <p className="text-sm text-gray-600">
         Tu es prêt à prendre la main sur des RDV, pitcher un use case et faire vivre une démo immersive.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Button onClick={() => alert("Pitch copié dans le presse-papier !")}>📋 Copier mon pitch</Button>
-        <Button variant="outline" onClick={() => window.open("https://cal.com/romainlyriks/onboarding", "_blank")}>📅 Prendre un RDV</Button>
+        <Button variant="outline" onClick={() => window.open("https://cal.com/romainlyriks/onboarding", "_blank")}>
+          📅 Prendre un RDV
+        </Button>
       </div>
     </div>
   );
@@ -191,3 +193,4 @@ export default function OnboardingApp() {
     </div>
   );
 }
+
