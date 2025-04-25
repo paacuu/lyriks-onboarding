@@ -180,8 +180,18 @@ export default function OnboardingApp() {
         <Card className="rounded-2xl shadow-lg bg-white border border-[#F6D117]">
           <CardContent className="p-8 text-center space-y-6">
             <h2 className="text-2xl font-bold text-[#006DFE]">
-              {currentTitle[step]}
-            </h2>
+  {currentTitle[step]}
+</h2>
+{step === 0 && (
+  <motion.img
+    src="/Logo.png"
+    alt="Logo Lyriks"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6 }}
+    className="mx-auto mt-2 w-12 h-12"
+/>
+)}
             <p className="text-[#333] text-base whitespace-pre-line">
               {currentDescription[step]}
             </p>
@@ -212,3 +222,4 @@ export default function OnboardingApp() {
     </div>
   );
 }
+
