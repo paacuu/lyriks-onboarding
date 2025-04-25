@@ -184,12 +184,12 @@ export default function OnboardingApp() {
 </h2>
 {step === 0 && (
   <motion.img
-    src="/Logo.png"
-    alt="Logo Lyriks"
-    initial={{ opacity: 0, scale: 0.8 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.6 }}
-    className="mx-auto mt-2 w-12 h-12"
+  src="/logo.png" // <-- ici
+  alt="Logo Lyriks"
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6 }}
+  className="mx-auto mt-2 w-12 h-12"
 />
 )}
             <p className="text-[#333] text-base whitespace-pre-line">
