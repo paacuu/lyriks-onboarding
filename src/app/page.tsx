@@ -151,9 +151,9 @@ export default function OnboardingApp() {
   "Facette (F7) : Ta Force IA 💡",
   "Ce qu'on attend de toi 🧠",
   "🎓 Quiz de validation",
+  "C’est parti ! 🎬",
   "🧪 Cas d’usage à pitcher",
   "🎯 Générateur d'accroche Lyriks",
-  "C’est parti ! 🎬",
   "✅ Onboarding terminé"
 ];
   const currentDescription = [
@@ -167,10 +167,8 @@ export default function OnboardingApp() {
   "Être stratégique, comprendre les enjeux business, et créer du lien humain. Tu es là pour guider, convaincre et accompagner nos futurs clients vers la clarté totale.",
   "Réponds à ces 3 questions pour valider ton onboarding :",
   "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
-
-"Tu es face à un CEO de LegalTech en série A. Il a 6 prestataires, 4 outils, et aucune vision consolidée. Rédige ton approche commerciale.",
+  "Tu es face à un CEO de LegalTech en série A. Il a 6 prestataires, 4 outils, et aucune vision consolidée. Rédige ton approche commerciale.",
   "Tape un secteur pour générer une accroche sectorielle dans l’esprit Lyriks.",
-  "Bravo 👏 Tu as coché toutes les étapes.",
   "🎉 Tu as complété l’onboarding Lyriks !",
 
 "Tu es prêt à prendre la main sur des RDV, pitcher un use case et faire vivre une démo immersive.",
