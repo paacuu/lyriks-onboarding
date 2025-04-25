@@ -22,7 +22,7 @@ export const metadata = {
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
     images: [
       {
-        url: "/Logo.png", // assure-toi que le fichier est bien à la racine de /public
+        url: "/Logo.png",
         width: 512,
         height: 512,
         alt: "Logo Lyriks",
