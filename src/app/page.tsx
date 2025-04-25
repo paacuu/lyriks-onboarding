@@ -35,16 +35,34 @@ const quizQuestions = [
   }
 ];
 
+const FunnelAnimation = () => (
+  <div className="w-full flex justify-center mt-4">
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="bg-gradient-to-b from-[#FC9600] via-[#F6D117] to-[#C640F4] w-64 h-64 rounded-b-full flex flex-col justify-between text-white font-bold p-4 text-sm shadow-lg"
+    >
+      <div className="text-center">🔬 Préparation</div>
+      <div className="text-center">🤝 Découverte</div>
+      <div className="text-center">🧠 Démo F7</div>
+      <div className="text-center">✅ Validation</div>
+      <div className="text-center">💼 Closing</div>
+    </motion.div>
+  </div>
+);
+
 export default function OnboardingApp() {
   const [step, setStep] = useState(0);
   const [quizAnswers, setQuizAnswers] = useState<number[]>([]);
   const [pitchText, setPitchText] = useState("");
   const [sector, setSector] = useState("");
 
-  const isQuizStep = step === 6;
-  const isPitchStep = step === 7;
-  const isPromptStep = step === 8;
-  const isFinalStep = step === 9;
+  const isQuizStep = step === 7;
+  const isPitchStep = step === 8;
+  const isPromptStep = step === 9;
+  const isFinalStep = step === 10;
+  const isFunnelVisualStep = step === 3;
 
   const handleQuizSelect = (qIdx: number, aIdx: number) => {
     const newAnswers = [...quizAnswers];
@@ -121,7 +139,7 @@ export default function OnboardingApp() {
   );
 
   const next = () => {
-    if (step < 9) setStep(step + 1);
+    if (step < 10) setStep(step + 1);
   };
 
   const back = () => {
@@ -132,6 +150,7 @@ export default function OnboardingApp() {
     "Bienvenue chez Lyriks 🚀",
     "Notre Mission 🎯",
     "Le Process Sales Lyriks 🔻",
+    "Le Funnel Sales Simplifié 🔥",
     "Facette (F7) : Ta Force IA 💡",
     "Ce qu'on attend de toi 🧠",
     "C’est parti ! 🎬",
@@ -145,6 +164,7 @@ export default function OnboardingApp() {
     "Tu fais désormais partie de l'équipe Sales la plus stratégique du marché SaaS B2B. Ici, on ne vend pas un outil, on change la manière dont les projets IT sont pensés et pilotés.",
     "Lyriks accélère la prise de décision, clarifie les specs et automatise l'orchestration des projets. Ta mission ? Rendre ça irrésistible pour un CEO, un PM ou un CTO.",
     "Préparation stratégique → Découverte impactante → Démo immersive avec F7 → Validation → Closing. Chaque étape est optimisée pour la projection client.",
+    "🔬 Préparation → 🤝 Découverte → 🧠 Démo F7 → ✅ Validation → 💼 Closing\nUn parcours clair et engageant, pensé pour projeter le client vers sa réussite.",
     "Avec F7, tu montres la puissance de l'automatisation : génération de diagrammes, specs PDF, prompts IA, tout ça en live. Une arme redoutable pour closer sans friction.",
     "Être stratégique, comprendre les enjeux business, et créer du lien humain. Tu es là pour guider, convaincre et accompagner nos futurs clients vers la clarté totale.",
     "Prépare ton pitch, maîtrise le funnel, et compose ton succès avec nous. Bienvenue chez Lyriks, là où chaque deal est une partition parfaitement orchestrée.",
@@ -153,99 +173,6 @@ export default function OnboardingApp() {
     "Tape un secteur pour générer une accroche sectorielle dans l’esprit Lyriks.",
     "Bravo 👏 Tu as coché toutes les étapes."
   ];
-
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#000000] via-[#C640F4] to-[#006DFE] p-4">
-      <motion.div
-        key={step}
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="w-full max-w-xl"
-      >
-        <Card className="rounded-2xl shadow-lg bg-white border border-[#F6D117]">
-          <CardContent className="p-8 text-center space-y-6">
-            <h2 className="text-2xl font-bold text-[#006DFE]">
-              {currentTitle[step]}
-            </h2>
-            <p className="text-[#333] text-base whitespace-pre-line">
-              {currentDescription[step]}
-            </p>
-
-            {isQuizStep && renderQuiz()}
-            {isPitchStep && renderPitch()}
-            {isPromptStep && renderPrompt()}
-            {isFinalStep && renderFinal()}
-
-            <div className="flex justify-between mt-6">
-              <Button variant="outline" onClick={back} disabled={step === 0} className="border-[#FC9600] text-[#FC9600]">
-                Précédent
-              </Button>
-              <Button onClick={next} disabled={step === currentTitle.length - 1} className="bg-[#FC9600] text-white hover:bg-[#bb46f5]">
-                Suivant
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </motion.div>
-    </div>
-  );
-}
-"use client";
-
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { motion } from "framer-motion";
-
-const quizQuestions = [...];
-
-const FunnelAnimation = () => (
-  <div className="w-full flex justify-center mt-4">
-    <motion.div
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="bg-gradient-to-b from-[#FC9600] via-[#F6D117] to-[#C640F4] w-64 h-64 rounded-b-full flex flex-col justify-between text-white font-bold p-4 text-sm shadow-lg"
-    >
-      <div className="text-center">🔬 Préparation</div>
-      <div className="text-center">🤝 Découverte</div>
-      <div className="text-center">🧠 Démo F7</div>
-      <div className="text-center">✅ Validation</div>
-      <div className="text-center">💼 Closing</div>
-    </motion.div>
-  </div>
-);
-
-export default function OnboardingApp() {
-  const [step, setStep] = useState(0);
-  const [quizAnswers, setQuizAnswers] = useState<number[]>([]);
-  const [pitchText, setPitchText] = useState("");
-  const [sector, setSector] = useState("");
-
-  const isQuizStep = step === 7;
-  const isPitchStep = step === 8;
-  const isPromptStep = step === 9;
-  const isFinalStep = step === 10;
-  const isFunnelVisualStep = step === 3;
-
-  const handleQuizSelect = (qIdx: number, aIdx: number) => {...};
-
-  const renderQuiz = () => {...};
-  const renderPitch = () => {...};
-  const renderPrompt = () => {...};
-  const renderFinal = () => {...};
-
-  const next = () => {
-    if (step < 10) setStep(step + 1);
-  };
-
-  const back = () => {
-    if (step > 0) setStep(step - 1);
-  };
-
-  const currentTitle = [...];
-  const currentDescription = [...];
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#000000] via-[#C640F4] to-[#006DFE] p-4">
@@ -285,5 +212,3 @@ export default function OnboardingApp() {
     </div>
   );
 }
-
-
