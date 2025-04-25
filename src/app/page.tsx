@@ -189,8 +189,8 @@ export default function OnboardingApp() {
 </h2>
 {step === 0 && (
   <motion.img
-    src="/Logo.png"
-    alt="Logo Lyriks"
+    src="/b12edd95-e353-42ea-8423-95b882fd166c.png"
+    alt="Logo Lyrb12edd95-e353-42ea-8423-95b882fd166c.png"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6 }}
