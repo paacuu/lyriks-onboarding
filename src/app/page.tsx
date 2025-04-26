@@ -211,20 +211,22 @@ export default function OnboardingApp() {
             {isPromptStep && renderPrompt()}
             {isFinalStep && renderFinal()}
             {isFunnelVisualStep && <FunnelAnimation />}
-            <div className="flex justify-between mt-6">
-              {step > 0 ? (
-                <Button variant="outline" onClick={back} className="border-[#FC9600] text-[#FC9600]">
-                  Précédent
-                </Button>
-              ) : <div />}
-              <Button 
-                onClick={next} 
-                disabled={step === currentTitle.length - 1} 
-                className={`bg-[#FC9600] text-white hover:bg-[#bb46f5] ${step === 0 ? 'mx-auto' : ''}`}
-              >
-                Suivant
-              </Button>
-            </div>
+            <div className={`flex mt-6 ${isFinalStep ? 'justify-center' : 'justify-between'}`}>
+  {step > 0 && (
+    <Button variant="outline" onClick={back} className="border-[#FC9600] text-[#FC9600]">
+      Précédent
+    </Button>
+  )}
+  {!isFinalStep && (
+    <Button 
+      onClick={next} 
+      className={`bg-[#FC9600] text-white hover:bg-[#bb46f5] ${step === 0 ? 'mx-auto' : ''}`}
+    >
+      Suivant
+    </Button>
+  )}
+</div>
+
           </CardContent>
         </Card>
       </motion.div>
