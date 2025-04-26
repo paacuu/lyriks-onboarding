@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Analytics } from '@vercel/analytics/react';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { metadata } from "./metadata"; // ✅ Garde juste cette ligne
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
