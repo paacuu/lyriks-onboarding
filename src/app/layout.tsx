@@ -21,7 +21,7 @@ export const metadata = {
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
     images: [
       {
-        url: "https://lyriks-onboarding-sales.vercel.app/logo-og.png",
+        url: "https://lyriks-onboarding-sales.vercel.app/logo2.png",
         width: 1200,
         height: 630,
         alt: "Logo Lyriks"
