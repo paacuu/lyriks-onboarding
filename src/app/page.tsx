@@ -137,12 +137,29 @@ export default function OnboardingApp() {
   );
 
   const next = () => {
-    if (step < 10) setStep(step + 1);
+    if (step < 10) {
+      setStep(prev => {
+        const newStep = prev + 1;
+        if (typeof window !== "undefined" && window.updateProgress) {
+          window.updateProgress(newStep);
+        }
+        return newStep;
+      });
+    }
   };
-
+  
   const back = () => {
-    if (step > 0) setStep(step - 1);
+    if (step > 0) {
+      setStep(prev => {
+        const newStep = prev - 1;
+        if (typeof window !== "undefined" && window.updateProgress) {
+          window.updateProgress(newStep);
+        }
+        return newStep;
+      });
+    }
   };
+  
 
   const currentTitle = [
     "Bienvenue chez Lyriks 🚀",
