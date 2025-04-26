@@ -1,4 +1,9 @@
 "use client";
+declare global {
+  interface Window {
+    updateProgress?: (step: number) => void;
+  }
+}
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
