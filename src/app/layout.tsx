@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,11 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Lyriks Onboarding Sales",
   description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
   openGraph: {
-    url: "https://lyriks-onboarding-sales.vercel.app", // ✅ og:url
+    url: "https://lyriks-onboarding-sales.vercel.app",
     title: "Lyriks Onboarding Sales",
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
     images: [
@@ -39,7 +40,7 @@ export const metadata = {
   },
   metadataBase: new URL("https://lyriks-onboarding-sales.vercel.app"),
   other: {
-    "fb:app_id": "123456789012345" // optionnel, à personnaliser si tu as un app Facebook
+    "fb:app_id": "123456789012345"
   }
 };
 
@@ -50,6 +51,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="fb:app_id" content="123456789012345" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
