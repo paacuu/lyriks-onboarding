@@ -118,15 +118,16 @@ export default function OnboardingApp() {
         value={sector}
         onChange={(e) => setSector(e.target.value)}
         placeholder="Ex : HealthTech, EdTech, etc."
-        className="w-full p-3 border border-gray-300 rounded-xl text-sm"
+        className="w-full p-3 border border-gray-300 rounded-xl text-sm text-black" // ICI on passe en text-black
       />
       {sector && (
-        <p className="text-sm italic text-gray-600">
+        <p className="text-sm italic text-black"> {/* ICI aussi text-black */}
           👉 &quot;Et si {sector} pouvait enfin aligner ses specs avec la vision produit ?&quot;
         </p>
       )}
     </div>
   );
+  
 
   const renderFinal = () => (
     <div className="space-y-4">
