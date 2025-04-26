@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
     images: [
       {
-        url: "https://lyriks-onboarding-sales.vercel.app/logo-og.png",
+        url: "https://lyriks-onboarding-sales.vercel.app/Logo2.png",
         width: 1200,
         height: 630,
         alt: "Logo Lyriks"
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lyriks Onboarding Sales",
     description: "Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette.",
-    images: ["https://lyriks-onboarding-sales.vercel.app/logo-og.png"]
+    images: ["https://lyriks-onboarding-sales.vercel.app/Logo2.png"]
   },
   metadataBase: new URL("https://lyriks-onboarding-sales.vercel.app"),
   other: {
