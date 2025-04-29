@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:image" content="https://lyriks-onboarding-sales.vercel.app/logo2.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="fb:app_id" content="123456789012345" />
+        <meta property="fb:app_id" content="160123105232698" />
         
         {/* Meta Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
