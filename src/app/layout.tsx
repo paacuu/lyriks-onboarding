@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:url" content="https://lyriks-onboarding-sales.vercel.app" />
         <meta property="og:title" content="Lyriks Onboarding Sales" />
         <meta property="og:description" content="Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette." />
-        <meta property="og:image" content="https://lyriks-onboarding-sales.vercel.app/Logo2.jpg" />
+        <meta property="og:image" content="https://lyriks-onboarding-sales.vercel.app/logo2.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="fb:app_id" content="123456789012345" />
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lyriks Onboarding Sales" />
         <meta name="twitter:description" content="Découvre comment closer avec impact en pilotant la clarté produit grâce à Lyriks & Facette." />
-        <meta name="twitter:image" content="https://lyriks-onboarding-sales.vercel.app/Logo2.jpg" />
+        <meta name="twitter:image" content="https://lyriks-onboarding-sales.vercel.app/logo2.jpg" />
         
         {/* SEO classique */}
         <title>Lyriks Onboarding Sales</title>
